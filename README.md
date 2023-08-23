@@ -17,6 +17,8 @@ Docker build . -t image_processing
 
 This example uses the conf.sh file that allready exists in the ./configuration directory
 ```
+mkdir ./input
+mkdir ./output
 docker run --rm --name mycontainer -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output -v $(pwd)/configuration:/app/configuration image_processing
 ```
 
